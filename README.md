@@ -1,17 +1,17 @@
-Loyalty Points & Bonus Distribution Report
+# Loyalty Points & Bonus Distribution Report
 ABC Real-Money Gaming Platform
 
-Introduction:
+# Introduction:
 ABC is an internet gaming firm that offers multiplayer games like Ludo for real money. Gamers create accounts on the site, make deposits, and engage in user-to-user gaming. Loyal gamers are rewarded with loyalty points based on their behaviour, and the platform makes money by charging a nominal fee.
 Based on established business principles, this report computes loyalty points by analyzing player activity. Additionally, it offers suggestions for enhancing the current point system as well as insights on bonus distribution tactics.
-Problem Statement:
+# Problem Statement:
 The goal of this assignment is to:
 •	Calculate loyalty points for players using the defined formula.
 •	Analyze loyalty per time slot (S1 and S2) for specific dates.
 •	Rank players monthly based on loyalty points.
 •	Propose a fair bonus distribution from a ₹50,000 reward pool.
 •	Evaluate the fairness of the loyalty formula and suggest improvements.
-Data Summary:
+# Data Summary:
 User Activity Categories:
 •	Deposits: Money added to the platform.
 •	Withdrawals: Money taken out from the platform.
@@ -26,13 +26,13 @@ Data Sources:
 
 
 
-Loyalty Point Formula:
+# Loyalty Point Formula:
 Loyalty Points =
 (0.01 * Total Deposit)
 + (0.005 * Total Withdrawal)
 + (0.001 * max (#Deposits - #Withdrawals, 0))
 + (0.2 * Number of Games Played)
-Slot-Wise Loyalty Points (Specific Dates):
+# Slot-Wise Loyalty Points (Specific Dates):
 	Each day is divided into two slots:
 •	S1: 12 AM to 12 PM
 •	S2: 12 PM to 12 AM
@@ -54,7 +54,7 @@ Average Metrics:
 
 
 
-Bonus Distribution Strategy – ₹50,000:
+# Bonus Distribution Strategy – ₹50,000:
 The company aims to reward the Top 50 ranked players with a total bonus pool of ₹50,000.
 Objective: Keep the bonus distribution simple yet fair by recognizing top-performing players more significantly, while still rewarding broader participation.
 tier1_bonus_pool = bonus_pool * 0.40 # Top 10 players get 40%
@@ -65,11 +65,11 @@ Tier	Rank Range	Players	% of Bonus Pool	Total Bonus (₹)	Bonus per Player (₹)
 1	1-10	10	40%	₹20,000	₹2,000(each)
 2	11-50	40	60%	₹30,000	₹750 (each)
 
-Why This Approach?
+# Why This Approach?
 •	Simple and easy to implement.
 •	Rewards top 10 heavily (who drive most engagement).
 •	Encourages players to stay in the top 50 for guaranteed bonus.
-Evaluation of Current Formula
+# Evaluation of Current Formula
  Strengths:
 •	Encourages deposits.
 •	Includes gameplay for balance.
@@ -81,12 +81,12 @@ Issues:
 •	Doesn't factor in consistency or daily activity.
 
 
-Conclusion
+# Conclusion
 •	Loyalty points were successfully calculated using defined rules.
 •	Bonus distribution using a hybrid model (70% loyalty, 30% gameplay) ensures fairness.
 •	The current formula, while functional, can be improved to better reflect true user loyalty and engagement.
 Future versions of the formula can integrate game outcomes, cap financial impact, and promote consistent daily use of the platform.
-Appendix
+# Appendix
 •	Jupyter Notebook: 
 •	Calculations and visualizations (available in code)
 •	Code for loyalty calculation, ranking, and bonus allocation
